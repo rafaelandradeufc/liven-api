@@ -6,6 +6,6 @@ import app from './app';
 createConnection().then(() => {
 
   // start express server
-  const port = process.env.APP_PORT || 3000;
+  const port = process.env.PORT || 3000;
   app.listen(port, () => console.log(`App start in localhost:${port} !`));
 });
